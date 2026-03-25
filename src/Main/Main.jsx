@@ -1,10 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import './Main.css'
 
-const Main = ({ films, setFilms, menu }) => {
+const Main = ({ films }) => {
   const navigate = useNavigate();
-
-  if (!films.length) return <p>Loading...</p>
 
   return (
     <div className="main">

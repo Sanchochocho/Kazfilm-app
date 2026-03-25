@@ -34,7 +34,7 @@ const Search = ({ films }) => {
         <div className="search_page">
 
             <div className="input">
-                <img src="/Vector.png" alt="" />
+                <img src="/Kazfilm-app/Vector.png" alt="" />
                 <input
                     type="text"
                     placeholder="Найти фильм"
