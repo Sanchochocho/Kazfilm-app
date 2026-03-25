@@ -6,7 +6,7 @@ import Registration from "./Reg&Auto/Registration";
 import Search from "./Search/Search";
 import Profile from "./Profile/Profile";
 import ScrollToTop from "./ScrollToTop";
-import { Route, Routes, BrowserRouter, Router } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -34,7 +34,7 @@ function App() {
       .then(data => setFilms(data.items))
   }, []);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       {isAuth && <Header menu={menu} setMenu={setMenu} />}
       <Routes>
@@ -59,7 +59,7 @@ function App() {
         )}
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
