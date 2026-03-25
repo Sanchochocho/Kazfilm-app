@@ -1,0 +1,97 @@
+.profile_page {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 110px 16px 16px;
+    min-height: 100vh;
+
+    background: linear-gradient(to bottom, #3b0000, #000);
+    color: white;
+    font-family: Arial;
+}
+
+.profile_title,
+.favorites_title {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.info {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ava {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.avatarka {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #222;
+}
+
+.login,
+.password {
+    margin: 4px 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.favorites {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.fav_card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.fav_card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.fav_card:active {
+    transform: scale(0.97);
+}
+
+.fav_card button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    color: #ff0000;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    font-size: 24px;
+}
+
+.favorites p {
+    grid-column: span 2;
+    text-align: center;
+    color: #aaa;
+    margin-top: 20px;
+}

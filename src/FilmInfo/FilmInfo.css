@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.film_page {
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 110px 16px 16px;
+  color: white;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(180deg,
+      #3b0000 0%,
+      #1a0000 50%,
+      #000 100%);
+}
+
+.back_btn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.film_poster {
+  position: relative;
+}
+
+.film_poster img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.film_info {
+  padding: 16px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.film_info h1 {
+  margin: 10px 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.film_meta {
+  display: flex;
+  gap: 15px;
+  color: #ccc;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+
+.film_tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.film_tags span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.film_country {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.watch_btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #ff0000, #8b0000);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.watch_btn:active {
+  background: #640101;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.film_top {
+  flex-shrink: 0;
+}
+
+.fav_btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.fav_btn:active {
+  transform: scale(0.97);
+  background: rgba(255, 255, 255, 0.1);
+}
